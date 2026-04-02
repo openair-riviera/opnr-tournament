@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Format — OPNR Riviera Tournament</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="Logo_def_OAR_WA_edited.png" alt="Open Air Riviera logo">
+      <div><small>Open Air Riviera</small><strong>OPNR Tournament</strong></div>
+    </a>
+    <nav class="menu"><a href="index.html">Home</a><a href="format.html" class="is-current">Format</a><a href="iscrizione.html">Iscrizione</a><a href="premi.html">Premi</a><a href="sponsor.html">Sponsor</a></nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Apri menu"><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a>
+<a href="format.html">Format</a>
+<a href="iscrizione.html">Iscrizione</a>
+<a href="premi.html">Premi</a>
+<a href="sponsor.html">Sponsor</a></div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-shell">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Format</div>
+          <h1>Format perfetto</h1>
+          <p>
+            Prima fase con 2 gironi iniziali da 8 squadre. Le prime 4 di ciascun girone vanno nel Gold,
+            le ultime 4 nel Silver. Poi si formano Gold 1, Gold 2, Silver 1 e Silver 2.
+            Da lì: quarti incrociati, semifinali ad estrazione e finale.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="format-flow">
+      <article class="format-card">
+        <small>Fase 1</small>
+        <h3>Girone A</h3>
+        <ul><li>8 squadre</li><li>Prime 4 → Gold</li><li>Ultime 4 → Silver</li></ul>
+      </article>
+      <div class="split-marker">Split</div>
+      <article class="format-card">
+        <small>Fase 1</small>
+        <h3>Girone B</h3>
+        <ul><li>8 squadre</li><li>Prime 4 → Gold</li><li>Ultime 4 → Silver</li></ul>
+      </article>
+    </div>
+
+    <div class="phase-two">
+      <article class="phase-box gold">
+        <small>Fase 2</small>
+        <h3>Gold</h3>
+        <div class="mini-grid">
+          <div class="mini-box"><strong>Gold 1</strong><span>4 squadre</span></div>
+          <div class="mini-box"><strong>Gold 2</strong><span>4 squadre</span></div>
+        </div>
+      </article>
+      <article class="phase-box silver">
+        <small>Fase 2</small>
+        <h3>Silver</h3>
+        <div class="mini-grid">
+          <div class="mini-box"><strong>Silver 1</strong><span>4 squadre</span></div>
+          <div class="mini-box"><strong>Silver 2</strong><span>4 squadre</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="text-grid">
+      <article class="text-block"><h3>Perché funziona</h3><p>Tiene tutte le squadre dentro il torneo e rende il percorso ordinato.</p></article>
+      <article class="text-block"><h3>Fase finale</h3><p>Ogni livello ha il suo tabellone con quarti, semifinali ad estrazione e finale.</p></article>
+    </div>
+
+    <div class="tabs">
+      <button class="tab is-active" data-tab="gold">Tabellone Gold</button>
+      <button class="tab" data-tab="silver">Tabellone Silver</button>
+    </div>
+
+    <div class="tab-panel is-active" id="tab-gold">
+      <div class="bracket-wrap">
+      <div class="bracket">
+        <div class="round">
+          <h4>Quarti</h4>
+          <div class="match"><strong>QF1</strong><div class="team">1ª Gold 1</div><div class="team">4ª Gold 2</div></div>
+          <div class="match"><strong>QF2</strong><div class="team">2ª Gold 1</div><div class="team">3ª Gold 2</div></div>
+          <div class="match"><strong>QF3</strong><div class="team">1ª Gold 2</div><div class="team">4ª Gold 1</div></div>
+          <div class="match"><strong>QF4</strong><div class="team">2ª Gold 2</div><div class="team">3ª Gold 1</div></div>
+        </div>
+        <div class="round semis">
+          <h4>Semifinali</h4>
+          <div class="draw-box">Accoppiamenti ad estrazione tra le 4 vincitrici dei quarti.</div>
+          <div class="match"><strong>SF1</strong><div class="team">Vincente QF _</div><div class="team">Vincente QF _</div></div>
+          <div class="match"><strong>SF2</strong><div class="team">Vincente QF _</div><div class="team">Vincente QF _</div></div>
+        </div>
+        <div class="round final">
+          <h4>Finale</h4>
+          <div class="match final-match"><strong>Finale Gold</strong><div class="team">Vincente SF1</div><div class="team">Vincente SF2</div></div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-silver">
+      <div class="bracket-wrap">
+      <div class="bracket">
+        <div class="round">
+          <h4>Quarti</h4>
+          <div class="match"><strong>QF1</strong><div class="team">1ª Silver 1</div><div class="team">4ª Silver 2</div></div>
+          <div class="match"><strong>QF2</strong><div class="team">2ª Silver 1</div><div class="team">3ª Silver 2</div></div>
+          <div class="match"><strong>QF3</strong><div class="team">1ª Silver 2</div><div class="team">4ª Silver 1</div></div>
+          <div class="match"><strong>QF4</strong><div class="team">2ª Silver 2</div><div class="team">3ª Silver 1</div></div>
+        </div>
+        <div class="round semis">
+          <h4>Semifinali</h4>
+          <div class="draw-box">Accoppiamenti ad estrazione tra le 4 vincitrici dei quarti.</div>
+          <div class="match"><strong>SF1</strong><div class="team">Vincente QF _</div><div class="team">Vincente QF _</div></div>
+          <div class="match"><strong>SF2</strong><div class="team">Vincente QF _</div><div class="team">Vincente QF _</div></div>
+        </div>
+        <div class="round final">
+          <h4>Finale</h4>
+          <div class="match final-match"><strong>Finale Silver</strong><div class="team">Vincente SF1</div><div class="team">Vincente SF2</div></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-line"><div>Format torneo</div><div>2 gironi iniziali → Gold / Silver</div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
